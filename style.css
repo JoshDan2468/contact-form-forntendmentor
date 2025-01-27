@@ -1,0 +1,198 @@
+@import'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap';
+
+:root{
+    --cl-1:hsl(148, 38%, 91%);
+    --cl-2:hsl(169, 82%, 27%);
+    --cl-4:hsl(0, 0%, 100%);
+    --cl-5:hsl(0, 66%, 54%);
+    --cl-6: hsl(186, 15%, 59%);
+    --cl-7: hsl(187, 24%, 22%);
+
+
+    --fs-xl:22px;
+    --fs-lg:18px;
+    --fs-md:16px;
+    --fs-sm:12px;
+    --fs-xs:8px;
+
+
+    --fw-xl:700;
+    --fw-lg:600;
+    --fw-md:500;
+    --fw-sm:400;
+    --fw-sm:300;
+}
+*{
+    font-family: "Karla", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: var(--cl-1);
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    background-color: var(--cl-4);
+    padding: 10px 20px ;
+    border-radius: 15px;
+}
+h2{
+    padding: 10px;
+    margin-top: 5px;
+    color: var(--cl-7);
+    font-size: var(--fs-md);
+}
+.names{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between; 
+   
+}
+.names .fname{
+    padding-right: 10px;
+}
+p{
+    padding: 10px 0;
+    font-size: var(--fs-sm);
+    color: var(--cl-7);
+}
+.mail-input{
+    width: 510px;
+    color: var(--cl-7);
+}
+input{
+    width: 250px;
+    padding: 10px;
+    border: 1.5px solid;
+    border-color: var(--cl-7);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+input:hover{
+    border-color: var(--cl-2);
+}
+.input-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checker{
+    padding-left: 50px;
+}
+.checker:hover{
+    background-color: var(--cl-6);
+}
+.input-check .check-btn{
+    position: absolute;
+    min-width: 40px;
+    cursor: pointer;
+}
+.input-check .check-btn{
+    margin: 7px;
+}
+.long-text{
+    width: 100%;
+    height: 70px;
+    padding: 4px;
+    border: 1.5px solid ;
+    border-color: var(--cl-7);
+    border-radius: 5px;
+    outline: none;
+    
+}
+.message{
+    margin-bottom: 20px;
+}
+.check-point{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.check-point .agreement{
+    padding-left: 15px;
+}
+button{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--cl-2);
+    border: none;
+    margin: 10px 25px 20px ;
+    cursor: pointer;
+    color: var(--cl-4);
+    font-weight: var(--fw-lg);
+        
+}
+button:hover{
+    background-color: var(--cl-7);
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input{
+        width: 360px;
+
+    }
+    .names{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .names .fname{
+        margin-left: 10px;
+        padding-bottom: 10px;
+
+    }
+    .email{
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+    .email .mail-input{
+        width: 360px;
+    }
+    .query{
+        margin-left: 10px;
+    }
+    .input-check{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;        
+    }
+    .input-check .text-area{
+        padding: 0px 0 20px 0;
+    }
+    .message{
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+    .message .long-text{
+        width: 360px;
+        height: 300px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+
